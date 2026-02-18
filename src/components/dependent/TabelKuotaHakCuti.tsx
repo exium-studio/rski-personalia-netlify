@@ -101,7 +101,7 @@ export default function TabelKuotaHakCuti({ filterConfig }: Props) {
       td: (
         <HStack>
           <Text>{formatNumber(hakCuti?.used_kuota)}</Text>
-          <Text opacity={0.4}>/ {formatNumber(hakCuti?.used_kuota) || 0}</Text>
+          <Text opacity={0.4}>/ {formatNumber(hakCuti?.kuota) || "-"}</Text>
           {/* <Text opacity={0.4}>hari</Text> */}
         </HStack>
       ),
